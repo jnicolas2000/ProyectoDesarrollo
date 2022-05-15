@@ -1,0 +1,65 @@
+/* operaciones */
+div {
+  width: 360px; }
+
+/* condicional */
+div {
+  color: black; }
+
+/* bucles */
+/* interpolaciones */
+h1 {
+  font-size: 24em; }
+
+/* interpolaciones */
+h2 {
+  font-size: 12em; }
+
+/* interpolaciones */
+h3 {
+  font-size: 8em; }
+
+/* interpolaciones */
+h4 {
+  font-size: 6em; }
+
+/* interpolaciones */
+h5 {
+  font-size: 4.8em; }
+
+/* interpolaciones */
+h6 {
+  font-size: 4em; }
+
+/* each */
+.color-red {
+  background-color: red; }
+
+.color-blue {
+  background-color: blue; }
+
+.color-green {
+  background-color: green; }
+
+.color-yellow {
+  background-color: yellow; }
+
+/* maps */
+.red-twitter {
+  color: blue; }
+
+.red-facebook {
+  color: green; }
+
+.red-instagram {
+  color: red; }
+
+/* extend */
+.boton, .boton-primario {
+  border: solid 2px black;
+  padding: 8px 16px;
+  margin: 8px; }
+
+.boton-primario {
+  background-color: blue;
+  border-color: red; }

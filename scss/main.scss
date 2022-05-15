@@ -1,0 +1,79 @@
+$numero: 720px;
+
+/* operaciones */
+
+div {
+    width: $numero/2;
+}
+
+/* condicional */
+$animal: perro;
+
+div {
+    @if $animal == pato {
+        color: blue;
+    } @else if $animal != pato {
+        color: black;
+    }
+}
+
+/* bucles */
+@for $i from 1 through 6 {
+    /* interpolaciones */
+
+    h#{$i} {
+        font-size: 24em / $i;
+    }
+}
+
+
+/* each */
+$lista-colores: red, blue, green, yellow;
+
+@each $color in $lista-colores {
+    .color-#{$color} {
+        background-color: $color;
+    }
+}
+
+/* maps */
+
+$redes: (
+    twitter: blue,
+    facebook: green,
+    instagram: red,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+
+/* extend */
+
+.boton {
+    border: solid 2px black;
+    padding: 8px 16px;
+    margin: 8px;
+}
+
+.boton-primario {
+    @extend .boton;
+    background-color: blue;
+    border-color: red;
+}
+
+
+/* mixins */
+
+@mixin sixe($alto, $ancho, $margin) {
+    height: $alto;
+    width: $ancho;
+    margin: $margin;
+}
+
+div {
+    @include size(8px, 16px, 24px)
+}
